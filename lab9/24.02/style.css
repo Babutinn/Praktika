@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f7f7f7;
+}
+
+.scene {
+    position: relative;
+    width: 200px;
+    height: 300px;
+}
+
+.ball {
+    width: 100px;
+    height: 100px;
+    background: rgb(255, 0, 85);
+    border-radius: 50%;
+    position: absolute;
+    left: 60px;
+    animation: bounce 1s infinite ease-in-out;
+}
+
+.shadow {
+    width: 100px;
+    height: 20px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 60px;
+    bottom: 5px;
+    animation: shadowScale 1s infinite ease-in-out;
+}
+
+@keyframes bounce {
+    0% {
+        top: 0;
+        transform: scale(1, 1);
+    }
+    50% {
+        top: 200px;
+        transform: scale(1.2, 0.8); 
+    }
+    100% {
+        top: 0;
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes shadowScale {
+    0% {
+        transform: scale(0.6);
+        opacity: 0.3;
+    }
+    50% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+    100% {
+        transform: scale(0.6);
+        opacity: 0.3;
+    }
+}
