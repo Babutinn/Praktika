@@ -1,0 +1,37 @@
+.box{
+    width: 150px;
+    height: 80px;
+    margin: 20px;
+    padding: 10px;
+    color: #fff;
+}
+.parent{
+    position: relative;
+    height: 200px;
+    border: dashed;
+
+}
+.absolute{
+    position: absolute;
+    background: gray;
+    top: 20px;
+    right: 20px;
+}
+.relative{
+    position: relative;
+    background: rgb(220, 106, 255);
+    border: solid;
+}
+.fixed{
+    position:fixed;
+    background: rgb(113, 198, 255);
+    bottom: 20px;
+    right: 20px;
+    border: groove;
+}
+
+.static{
+    position: static;
+    background: hwb(340 0% 50% / 0.678);
+    border: double;
+}
