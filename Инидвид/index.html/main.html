@@ -1,70 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Flower Shop</title>
     <link rel="stylesheet" href="../style.css/main.css">
 </head>
-
 <body>
-    <div class="container">
-        <div class="header">
-            <img src="../img/Logo.PNG" alt="">
+    <header class="header">
+        <div class="header-container">
+            <img src="../img/Logo.PNG" alt="Logo">
             <div class="menuHead">
-    
                 <a href="">Войти</a>
                 <a href="">Избранное</a>
                 <a href="">Корзина</a>
-    
             </div>
         </div>
-        <div class="owner">
-            <h2>Свежие розы</h2>
+    </header>
+    <main class="container">
+        
+        <!-- Секция 1: Розы -->
+        <section class="shop-section">
+            <h2 class="section-title">Свежие розы</h2>
             <div class="boxes">
-                <div class="box1">
-                    <div class="imghere"></div>
-                    <p>1000p</p>
-                    <div class="price+">
-                        <p>Name</p>
-                        <button>+</button>
+                <div class="card">
+                    <div class="img-container"><img src="../img/rose1.jpg" alt="Красные" class="flower-img"></div>
+                    <p class="name">Красные</p>
+                    <div class="price">
+                        <p class="amount">5000p</p>
+                        <button class="btn">+</button>
                     </div>
                 </div>
-                <div class="box2">
-                    <div class="imghere"></div>
-                    <p>1000p</p>
-                    <div class="price+">
-                        <p>Name</p>
-                        <button>+</button>
+                <div class="card">
+                    <div class="img-container"><img src="../img/rose2.jpg" alt="Белые" class="flower-img"></div>
+                    <p class="name">Белые</p>
+                    <div class="price">
+                        <p class="amount">3000p</p>
+                        <button class="btn">+</button>
                     </div>
                 </div>
-                <div class="box3">
-                    <div class="imghere"></div>
-                    <p>1000p</p>
-                    <div class="price+">
-                        <p>Name</p>
-                        <button>+</button>
+                <div class="card">
+                    <div class="img-container"><img src="../img/rose3.jpg" alt="Желтые" class="flower-img"></div>
+                    <p class="name">Желтые</p>
+                    <div class="price">
+                        <p class="amount">2000p</p>
+                        <button class="btn">+</button>
                     </div>
                 </div>
-                <div class="box4">
-                    <div class="imghere"></div>
-                   <p>1000p</p>
-                   <div class="price+">
-                       <p>Name</p>
-                       <button>+</button>
-                   </div>
-               </div>
+                <div class="card">
+                    <div class="img-container"><img src="../img/rose4.jpg" alt="Розовые" class="flower-img"></div>
+                    <p class="name">Розовые</p>
+                    <div class="price">
+                        <p class="amount">8000p</p>
+                        <button class="btn">+</button>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-   
-</body>
+        </section>
 
+        <!-- Секция 2: Выбор покупателей -->
+        <section class="shop-section">
+            <h2 class="section-title1">Выбор покупателей</h2>
+            <div class="boxes">
+                <div class="card">
+                    <div class="img-container"><img src="../img/rose1.jpg" alt="Тюльпаны" class="flower-img"></div>
+                    <p class="name">Тюльпаны</p>
+                    <div class="price">
+                        <p class="amount">2000p</p>
+                        <button class="btn">+</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-container"><img src="../img/rose2.jpg" alt="Пионы" class="flower-img"></div>
+                    <p class="name">Пионы</p>
+                    <div class="price">
+                        <p class="amount">9000p</p>
+                        <button class="btn">+</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-container"><img src="../img/rose3.jpg" alt="Ромашки" class="flower-img"></div>
+                    <p class="name">Ромашки</p>
+                    <div class="price">
+                        <p class="amount">500p</p>
+                        <button class="btn">+</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-container"><img src="../img/rose4.jpg" alt="Лилии" class="flower-img"></div>
+                    <p class="name">Лилии</p>
+                    <div class="price">
+                        <p class="amount">10000p</p>
+                        <button class="btn">+</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+</body>
 </html>
